@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Months</title>
+        <link href="months.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+            <main id="container">
+                <div class="row">
+                    <!--January part-->
+                    <div class="column">
+                        <div class="card">
+                          <img src="/giphy (1).gif" alt="January" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>January has 31 days.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--Febuary part-->
+                    <div class="column">
+                        <div class="card">
+                          <img src="giphy.gif" alt="Febuary" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>Febuary has 28 days and 29 days on leap years.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                   <!--March part-->
+                   <div class="column">
+                    <div class="card">
+                      <img src="242534-March.gif" alt="September" style="width:100%; height: 245px;">
+                      <div class="container">
+                        <button class="button">Check</button>
+                            <div class="panel">
+                            <p>March has 31 days.</p>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                    <!--April part-->
+                    <div class="column">
+                        <div class="card">
+                          <img src="HandyDelayedDinosaur-max-1mb.gif" alt="April" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>April has 30 days.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--May part-->
+                      <div class="column">
+                        <div class="card">
+                          <img src="Yx3O.gif" alt="May" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>May has 30 days.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--June part-->
+                      <div class="column">
+                        <div class="card">
+                          <img src="images (1).jpeg" alt="June" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>June has 30 days.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--July part-->
+                      <div class="column">
+                        <div class="card">
+                          <img src="download.png" alt="July" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>July has 31 days.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--August part-->
+                      <div class="column">
+                        <div class="card">
+                          <img src="images.png" alt="August" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>August has 31 days.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--September part-->
+                      <div class="column">
+                        <div class="card">
+                          <img src="download.jpeg" alt="September" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>September has 30 days.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--October part-->
+                      <div class="column">
+                        <div class="card">
+                          <img src="download (1).jpeg" alt="October" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>October has 31days.</p>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--November part-->
+                      <div class="column">
+                        <div class="card">
+                          <img src="unnamed.gif" alt="November" style="width:100%; height: 245px;">
+                          <div class="container">
+                            <button class="button">Check</button>
+                                <div class="panel">
+                                <p>November has 31days.</p>
+                                </div>
+                            </div>
+                            </div> 
+                          </div>
+                          <!--December part-->
+                      <div class="column">
+                        <div class="card">
+                          <img src="images (2).jpeg" alt="December" style="width:100%; height: 245px;">
+                          <div class="container">
+                           <button class="button">Check</button>
+                                <div class="panel">
+                                <p>December has 30 days.</p>
+                                </div>
+                            </div>
+                            </div> 
+                          </div>
+                        </div>
+                  </div> 
+            </main>
+            <script>
+                var acc = document.getElementsByClassName("button");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                    }
+                });
+                } 
+            </script>
+    </body>
+</html>
